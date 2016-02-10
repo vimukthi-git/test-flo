@@ -1,0 +1,11 @@
+# In the graph we first need to define the nodes and the connections between them
+
+
+WSI2_CreationEtiquette(SoapRequest) RESULT -> IN Display(core/Output)
+'http://www.mondialrelay.fr/webservice/Web_Services.asmx?WSDL' -> WSDL WSI2_CreationEtiquette
+'WSI2_CreationEtiquette' -> METHOD WSI2_CreationEtiquette
+
+Read(filesystem/ReadFile) OUT -> PAYLOAD WSI2_CreationEtiquette
+
+# Start off the graph by sending a filename to the file reader
+'data/plain-soap.json' -> IN Read

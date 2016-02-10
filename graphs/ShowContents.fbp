@@ -1,7 +1,0 @@
-# In the graph we first need to define the nodes and the connections between them
-Read(filesystem/ReadFile) OUT -> IN Display(core/Output)
-
-Req(SoapRequest) OUT -> IN Read
-
-# Start off the graph by sending a filename to the file reader
-'package.json' -> IN Req

@@ -30,7 +30,11 @@
   },
   "noflo": {
     "components": {
-      "SoapRequest": "./components/SoapRequest.js"
+      "SoapRequest": "./components/SoapRequest.js",
+      "MondialrelayWSI2CreationEtiquetteParams": "./components/MondialrelayWSI2CreationEtiquetteParams.js",
+      "PostmenLabelParams": "./components/PostmenLabelParams.js",
+      "PostmenShipperAccountParams": "./components/PostmenShipperAccountParams.js",
+      "PostmenCustomsParams": "./components/PostmenCustomsParams.js"
     }
   },
   "devDependencies": {
@@ -41,9 +45,12 @@
   },
   "keywords": [],
   "dependencies": {
+    "lodash": "^4.3.0",
+    "md5": "^2.0.0",
     "noflo": "^0.5.22",
     "noflo-core": "^0.1.14",
     "noflo-filesystem": "^1.0.6",
+    "noflo-nodejs": "^0.5.2",
     "soap": "^0.12.0"
   }
 }

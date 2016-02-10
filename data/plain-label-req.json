@@ -1,0 +1,118 @@
+{
+  "async": false,
+  "shipper_account": {
+    "id": "3074c952-3e2b-4c9e-b9dd-455454cccc"
+  },
+  "service_options" : [
+    {
+      "type" : "cod",
+      "cod_value" : {
+        "currency" : "EUR",
+        "amount" : 100
+      }
+    }
+  ],
+  "paper_size": "a4",
+  "service_type": "mondialrelay_home_delivery_for_heavy_or_bulky_shipments",
+  "is_document": false,
+  "references": [
+    "ujj",
+    "reference2",
+    "reference3"
+  ],
+  "billing": {
+    "paid_by": "shipper",
+    "method": {
+      "type": "account",
+      "account_number": "V8E053"
+    }
+  },
+  "shipment": {
+    "ship_from": {
+      "contact_name": "FirstName",
+      "phone": "+33153418303",
+      "fax": "+1 206-654-3100",
+      "email": "foo@foo.com",
+      "company_name": "Foo Store",
+      "street1": "Rue Lepic",
+      "city": "Paris",
+      "country": "FRA",
+      "type": "business",
+      "tax_id": "911-70-1234",
+      "postal_code": "75001"
+    },
+    "ship_to": {
+      "contact_name": "ConsigneeFirstname",
+      "phone": "+33153418312",
+      "fax": "302-0123-1234",
+      "email": "support@buyer.com",
+      "company_name": "The Receiving Company",
+      "street1": "A55 autoroute",
+      "street2": "Wow Avenue",
+      "street3": "Boring part of town",
+      "city": "London",
+      "postal_code": "75001",
+      "country": "FRA",
+      "type": "residential",
+      "tax_id": "TIN728992"
+    },
+    "parcels": [
+      {
+        "box_type": "custom",
+        "weight": {
+          "value": 0.1,
+          "unit": "kg"
+        },
+        "dimension": {
+          "width": 20,
+          "height": 30,
+          "depth": 40,
+          "unit": "cm"
+        },
+        "items": [
+          {
+            "description": "Samsung Galaxy Tab wifi 3G 64GB black",
+            "origin_country": "FRA",
+            "quantity": 3,
+            "price": {
+              "amount": 8,
+              "currency": "USD"
+            },
+            "weight": {
+              "value": 0.6,
+              "unit": "kg"
+            },
+            "hs_code": "23528222"
+          }
+        ]
+      }
+    ]
+  },
+  "customs": {
+    "importer_address": {
+      "contact_name": "Sir Foo",
+      "phone": "999-34334-324",
+      "fax": "999-34334-325",
+      "email": "foo@foo.com",
+      "company_name": "Foo Store",
+      "street1": "100 MAIN ST",
+      "street2": "PO BOX 1022",
+      "street3": "SEATTLE WA 98104",
+      "city": "Seattle",
+      "state": "WA",
+      "postal_code": "77055",
+      "country": "FRA",
+      "type": "business",
+      "tax_id": "911-70-1234"
+    },
+    "purpose": "sample",
+    "terms_of_trade": "ddu",
+    "billing": {
+      "paid_by": "shipper",
+      "method": {
+        "type": "account",
+        "account_number": "V8E053"
+      }
+    }
+  }
+}
