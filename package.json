@@ -1,0 +1,49 @@
+{
+  "name": "noflo-test",
+  "description": "Test of noflo for postment couriers",
+  "version": "0.0.1",
+  "homepage": "https://github.com/vimukthi/noflo-test",
+  "author": {
+    "name": "Vimukthi Wickramasinghe",
+    "email": "vimukthi@aftership.net",
+    "url": "aftership.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vimukthi/noflo-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vimukthi/noflo-test/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/vimukthi/noflo-test/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "main.js",
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "noflo": {
+    "components": {
+      "SoapRequest": "./components/SoapRequest.js"
+    }
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [],
+  "dependencies": {
+    "noflo": "^0.5.22",
+    "noflo-core": "^0.1.14",
+    "noflo-filesystem": "^1.0.6",
+    "soap": "^0.12.0"
+  }
+}
