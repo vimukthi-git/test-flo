@@ -32,7 +32,7 @@ class PostmenShipperAccountParams extends noflo.Component {
             "shipper_account.address.country",
             "shipper_account.address.type",
             "shipper_account.credentials.merchant_id",
-            "shipper_account.credentials.collection_mode",
+            "shipper_account.credentials.private_key",
             "shipper_account.credentials.language"
         ];
 
