@@ -1,0 +1,14 @@
+{
+    "properties": {
+        "name": "main",
+        "environment": {
+            "type": "all"
+        },
+        "icon": ""
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {},
+    "connections": []
+}
