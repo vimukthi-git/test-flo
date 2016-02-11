@@ -1,0 +1,72 @@
+{
+    "properties": {
+        "name": "ShowContents",
+        "environment": {
+            "type": "all"
+        }
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "Read": {
+            "component": "filesystem/ReadFile",
+            "metadata": {
+                "x": 144,
+                "y": 36,
+                "width": 72,
+                "height": 72,
+                "label": "Read"
+            }
+        },
+        "Display": {
+            "component": "core/Output",
+            "metadata": {
+                "x": 288,
+                "y": 36,
+                "width": 72,
+                "height": 72,
+                "label": "Display"
+            }
+        },
+        "Req": {
+            "component": "SoapRequest",
+            "metadata": {
+                "x": 36,
+                "y": 36,
+                "width": 72,
+                "height": 72,
+                "label": "Req"
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "Read",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Display",
+                "port": "in"
+            }
+        },
+        {
+            "src": {
+                "process": "Req",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Read",
+                "port": "in"
+            }
+        },
+        {
+            "data": "package.json",
+            "tgt": {
+                "process": "Req",
+                "port": "in"
+            }
+        }
+    ]
+}
